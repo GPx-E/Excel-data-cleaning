@@ -1,57 +1,38 @@
-# 🎓PROYECTO LIMPIEZA DE DATOS EN EXCEL🎓
+# 🎓DATA CLEANING PROJECT IN EXCEL🎓
 
-Pequeño proyecto orientado a la revisión del proceso de limpieza y preparación de datos de un dataset en formato CSV. Para ello, se ha utilizado un dataset "sucio" con el find e dificultar la tarea y ayudar al aprendizaje.
+Small project oriented toward reviewing the process of cleaning and preparing data from a dataset in CSV format. To do so, a "dirty" dataset has been used in order to make the task more difficult and support learning.
 
-El dataset contiene información de ventas minoristas con las siguientes variables principales:
+The dataset contains retail sales information with the following main variables:
+• Transaction ID
+• Customer ID
+• Category
+• Item
+• Payment Method
+• Location
+• Discount Applied
+• Quantity
+• Price Per Unit
+• Total Spent
+• Transaction Date
 
-- Transaction ID
+Once the data were redistributed into a pivot table, I found the following errors:
+1) Inconsistent texts with spaces, uppercase and lowercase letters.
+2) Negative quantities or zeros.
+3) Numbers in text format.
+4) Missing values.
+5) Total calculations that did not match.
+6) Dates assigned to incorrect formats.
 
-- Customer ID
+To solve this, I used the following processes:
+1) Removal of extra spaces using the function ESPACIOS () and normalization of letters with the function NOMPROPIO ().
+2) Handling of erroneous values in the columns Quantity ≤ 0 and Price ≤ 0. Both transformed into empty spaces.
+3) Conversion of numeric text with the function VALOR () and error avoidance with the function SI.ERROR ().
+4) Recalculate total revenue (Quantity * Price Per Unit) and manage inconsistent operations.
+5) Finally, handling invalid dates and changing their format to short date.
 
-- Category
+Although it should not be done, I wanted to keep the entire process carried out as an evolution of the project in order to observe the process performed. Therefore, the secondary auxiliary columns that should have been removed at the end have been kept.
+In summary, the project aimed to clean and prepare the dataset for subsequent analysis. Finally, all that remains is to thank you for reading this far.
 
-- Item
-
-- Payment Method
-
-- Location
-
-- Discount Applied
-
-- Quantity
-
-- Price Per Unit
-
-- Total Spent
-
-- Transaction Date
-
-Una vez redistribuidos los datos en una tabla dinámica, encontré los siguientes errores:
-
-1) Textos inconsistentes con espacios, mayúsculaes y minúsculas.
-2) Cantidades negativas o ceros.
-3) Números con formato texto.
-4) Valores faltantes.
-5) Cálculos totales que no coincidian.
-6) Fechas adjudicadas a formatos erroneos.
-
-Para solucionarlo, he utilizado los siguientes procesos.
-
-1) Eliminación de espacios sobrantes función: ESPACIOS () y normalización de las letras con la función NOMPROPIO ().
-2) Tratamiento de valores erroneos en las columnas Quantity ≤ 0 y Price ≤ 0. Ambos transformados en espacios vacíos.
-3) Conversión de texto numérico con la función VALOR () y evasión de errores con la función SI.ERROR ().
-4) Recalcular el ingreso total (Quantity * Price Per Unit) y gestionar las operaciones inconsistentes.
-5) Por último, gestión de las fechas inválidad y cambiar su formato a fecha corta.
-
-Aunque no se deba hacer, he querido mantener todo el proceso realizado como evolución del proyecto con el fin, de poder observar el proceso realizado.
-Por ello, las columnas auxiliare sos ecundarias que deberían de haber sido eliminadas al final, las he mantenido.
-
-En resumen, el proyecto tenía como objetivo depurar y preparar el dataset para su posterior análisis.
-
-Por último, solo me queda darte las gracias por leer hasta aquí. 
-
-Un saludo.
+Best regards.
 
 GPx-E
-
-
