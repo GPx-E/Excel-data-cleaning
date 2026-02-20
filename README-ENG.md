@@ -3,17 +3,17 @@
 Small project oriented toward reviewing the process of cleaning and preparing data from a dataset in CSV format. To do so, a "dirty" dataset has been used in order to make the task more difficult and support learning.
 
 The dataset contains retail sales information with the following main variables:
-• Transaction ID
-• Customer ID
-• Category
-• Item
-• Payment Method
-• Location
-• Discount Applied
-• Quantity
-• Price Per Unit
-• Total Spent
-• Transaction Date
+- Transaction ID
+- Customer ID
+- Category
+- Item
+- Payment Method
+- Location
+- Discount Applied
+- Quantity
+- Price Per Unit
+- Total Spent
+- Transaction Date
 
 Once the data were redistributed into a pivot table, I found the following errors:
 1) Inconsistent texts with spaces, uppercase and lowercase letters.
@@ -31,7 +31,9 @@ To solve this, I used the following processes:
 5) Finally, handling invalid dates and changing their format to short date.
 
 Although it should not be done, I wanted to keep the entire process carried out as an evolution of the project in order to observe the process performed. Therefore, the secondary auxiliary columns that should have been removed at the end have been kept.
-In summary, the project aimed to clean and prepare the dataset for subsequent analysis. Finally, all that remains is to thank you for reading this far.
+In summary, the project aimed to clean and prepare the dataset for subsequent analysis. 
+
+Finally, all that remains is to thank you for reading this far.
 
 Best regards.
 
